@@ -9,9 +9,10 @@ const Home = () => {
         <div className="home-text">
           <h1>Hello, This is <span>Sravani Konapalli</span></h1>
           <p className="paragraph">
-            A passionate frontend developer dedicated to delivering exceptional digital experiences.
-            With expertise in HTML, CSS, JavaScript, and more, I'll help you transform your ideas into
-            engaging, interactive web applications. Explore my portfolio and let's get started!
+            A passionate full stack developer dedicated to delivering exceptional digital experiences.
+            With expertise in frontend such as HTML, CSS, JavaScript,React 
+            and backend technologies NodeJs, MongoDB. 
+            Explore my portfolio and let's get started!
           </p>
           <div className="links">
                 <a href="https://wa.me/9381037572" target="_blank" rel="noopener noreferrer" className="social-icon">

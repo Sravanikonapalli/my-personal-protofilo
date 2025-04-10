@@ -54,10 +54,10 @@
   background: linear-gradient(135deg, pink 30%, purple 70%);
   padding: 5px;
   box-shadow:
-    0 0 15px pink,
-    0 0 45px purple,
-    0 0 60px pink,
-    0 0 80px purple;
+  0 0 25px pink,
+  0 0 55px purple,
+  0 0 75px pink,
+  0 0 90px purple;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -126,8 +126,10 @@
     width: 200px;
     height: 200px;
     box-shadow:
-      0 0 10px pink,
-      0 0 20px purple;
+    0 0 20px pink,
+    0 0 45px purple,
+    0 0 65px pink,
+    0 0 70px purple;
   }
 }
 
