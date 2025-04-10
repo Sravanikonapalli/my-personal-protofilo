@@ -1,0 +1,140 @@
+#skills {
+  padding: 4rem 2rem;
+  background: #000;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.skills-heading span {
+  color: #ff69b4;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.technical-skills,
+.other-skills {
+  flex: 1;
+  min-width: 300px;
+}
+
+.technical-skills h3,
+.other-skills h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: rgb(249, 253, 7);
+}
+
+/* Tooltip in chart */
+.recharts-tooltip-wrapper {
+  z-index: 10;
+}
+
+/* Other Skills - Donut Indicators */
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.circle-wrapper {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, #000 60%, transparent 61%),
+              conic-gradient(
+                #ff69b4 0deg,
+                #ff69b4 var(--angle, 0deg),
+                #333 var(--angle, 0deg),
+                #333 360deg
+              );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.5s;
+  box-shadow: 0 0 0 rgba(255, 105, 180, 0);
+}
+
+.circle.visible {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+.circle:hover {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+}
+
+.label {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 0 6px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.label span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff69b4;
+  margin-top: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technical-skills,
+  .other-skills {
+    width: 100%;
+    text-align: center;
+  }
+
+  .circle-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+}
