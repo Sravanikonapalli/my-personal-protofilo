@@ -59,8 +59,8 @@
   border-radius: 50%;
   background: radial-gradient(circle closest-side, #000 60%, transparent 61%),
               conic-gradient(
-                #ff69b4 0deg,
-                #ff69b4 var(--angle, 0deg),
+                #6a0572 0deg,
+                #6a0572 var(--angle, 0deg),
                 #333 var(--angle, 0deg),
                 #333 360deg
               );
@@ -100,7 +100,7 @@
   text-align: center;
   color: #fff;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 10px;
   line-height: 1.4;
   padding: 0 6px;
   pointer-events: none;
@@ -109,7 +109,7 @@
 
 .label span {
   display: block;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: bold;
   color: #ff69b4;
   margin-top: 6px;

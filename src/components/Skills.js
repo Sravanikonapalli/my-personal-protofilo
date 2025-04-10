@@ -74,7 +74,7 @@ const Skills = () => {
         {/* Technical Skills */}
         <div className="technical-skills">
           <h3>Technical Skills</h3>
-          <ResponsiveContainer width="100%" height={350}>
+          <ResponsiveContainer width="100%" height={250}>
             <BarChart data={technicalSkills} layout="vertical" margin={{ left: 40 }}>
               <XAxis type="number" domain={[0, 100]} hide />
               <YAxis type="category" dataKey="name" width={100} />

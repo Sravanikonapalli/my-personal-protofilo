@@ -8,7 +8,7 @@ const Home = () => {
       <div className="home-content">
         <div className="home-text">
           <h1>Hello, This is <span>Sravani Konapalli</span></h1>
-          <p className="para">
+          <p className="paragraph">
             A passionate frontend developer dedicated to delivering exceptional digital experiences.
             With expertise in HTML, CSS, JavaScript, and more, I'll help you transform your ideas into
             engaging, interactive web applications. Explore my portfolio and let's get started!
